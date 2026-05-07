@@ -1,5 +1,5 @@
 executar dentro da vm Pnetlab, para acessar o zabbix pelo navegador do HOST
 
-iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination 10.0.137.52:80
+iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination IP-DO-ZABBIX:80
 iptables -t nat -A POSTROUTING -j MASQUERADE
 
