@@ -59,6 +59,7 @@ Inicie a VM do PnetLab.
 
 Faça login utilizando o `Usuário:` root e `Senha:` pnet
 
+![passo6](./screenshots/login-no-pnet.png)
 ![passo6](./screenshots/acessando-pnet.png)
 
 Durante a inicialização, pressione `Enter` para confirmar as etapas de configuração padrão. Não é necessário alterar nenhuma opção.
