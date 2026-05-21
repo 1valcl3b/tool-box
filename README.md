@@ -12,20 +12,18 @@ Após concluir o download, Siga os passos abaixo.
 
 # Importando o Appliance
 
-![passo1](./screenshots/acessar-virtualbox.png)
-
 Abra o VirtualBox e clique em **Importar**.
 
-![passo2](./screenshots/escolhendo-ovf.png)
+![passo1](./screenshots/acessar-virtualbox.png)
 
 Selecione o arquivo ` PNetLAB+Cenarios.ova`  e clique em **Próximo**.
 
+![passo2](./screenshots/escolhendo-ovf.png)
 > [!NOTE]
 > Adapte o caminho abaixo para o diretório onde o arquivo foi baixado.
 
-![passo3](./screenshots/importando-apliance.png)
-
 Aguarde a importação do appliance ser concluída.
+![passo3](./screenshots/importando-apliance.png)
 
 ---
 
@@ -60,9 +58,10 @@ Inicie a VM do PnetLab.
 Faça login utilizando o `Usuário:` root e `Senha:` pnet
 
 ![passo6](./screenshots/login-no-pnet.png)
-![passo6](./screenshots/acessando-pnet.png)
 
 Durante a inicialização, pressione `Enter` para confirmar as etapas de configuração padrão. Não é necessário alterar nenhuma opção.
+
+![passo6](./screenshots/acessando-pnet.png)
 
 Após a confirmação das etapas, a VM será reiniciada automaticamente.
 
@@ -72,9 +71,9 @@ Quando a VM iniciar novamente, o PnetLab já poderá ser acessado via SSH e pelo
 
 # Acessando a Interface Web
 
-![passo7](./screenshots/acessando-int-web-pnet.png)
-
 Abra o navegador e acesse o endereço IP exibido pela VM (Endereço IP da VM do PnetLab, Ex: 10.0.75.x).
+
+![passo7](./screenshots/acessando-int-web-pnet.png)
 
 ---
 
