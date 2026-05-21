@@ -20,7 +20,7 @@ Selecione o arquivo ` PNetLAB+Cenarios.ova`  e clique em **Próximo**.
 
 ![passo2](./screenshots/escolhendo-ovf.png)
 > [!NOTE]
-> Adapte o caminho abaixo para o diretório onde o arquivo foi baixado.
+> Adapte o caminho para o diretório onde o arquivo ` PNetLAB+Cenarios.ova` foi baixado.
 
 Aguarde a importação do appliance ser concluída.
 ![passo3](./screenshots/importando-apliance.png)
