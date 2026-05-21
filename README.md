@@ -100,7 +100,7 @@ Você pode:
 
 # Como acessar a interface Web do Zabbix
 
-Para acessar a interface Web do Zabbix, primeiro é necessário iniciar a VM `Zabbix-server` dentro do laboratório do PnetLab.  no cenário: `ambienteGER-sem-roteador` é necessario apenas iniciar o switch do cenário  e a VM `Zabbix-server` Após a inicialização, a VM do Zabbix deverá receber automaticamente um endereço IP via DHCP do próprio PnetLab, geralmente na faixa: `10.0.137.x/24`
+Para acessar a interface Web do Zabbix, primeiro é necessário iniciar a VM `Zabbix-server` dentro do laboratório do PnetLab.  no cenário: `ambienteGER-sem-roteador` é necessario apenas iniciar o switch do cenário  e a VM `Zabbix-server`. Após a inicialização, a VM do Zabbix deverá receber automaticamente um endereço IP via DHCP do próprio PnetLab, geralmente na faixa: `10.0.137.x/24`
 
 > [!NOTE]
 > No cenário `ambienteGER`, pode ser necessário realizar configurações adicionais no roteador.
