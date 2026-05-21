@@ -95,3 +95,73 @@ Você pode:
 - Criar novos cenários
 - Modificar os cenários existentes
 - Adaptar os laboratórios conforme sua necessidade
+
+---
+
+# Como acessar a interface Web do Zabbix
+
+Para acessar a interface Web do Zabbix, primeiro é necessário iniciar a VM `Zabbix-server` dentro do laboratório do PnetLab.  no cenário: `ambienteGER-sem-roteador` é necessario apenas iniciar o switch do cenário  e a VM `Zabbix-server` Após a inicialização, a VM do Zabbix deverá receber automaticamente um endereço IP via DHCP do próprio PnetLab, geralmente na faixa: `10.0.137.x/24`
+
+> [!NOTE]
+> No cenário `ambienteGER`, pode ser necessário realizar configurações adicionais no roteador.
+
+---
+
+# Inicializando o ambiente
+
+Dentro da VM `Zabbix-server`, execute o comando abaixo para verificar se a interface `eth0` recebeu um endereço IP:
+
+```bash
+ip -c a
+```
+
+Caso a interface não tenha recebido um IP automaticamente, execute:
+
+```bash
+dhclient eth0
+```
+
+Depois que a VM obtiver um endereço IP, anote esse valor. Ele será utilizado posteriormente na configuração da regra NAT.
+
+---
+
+# Criando a regra NAT no PnetLab
+
+Para permitir o acesso à interface Web do Zabbix a partir do navegador da máquina física (host), será necessário criar regras NAT na VM do PnetLab. Para ficar mais fácil acesse a VM do PnetLab via SSH para executar os comandos abaixo.
+
+> [!NOTE]
+> Substitua `IP-DO-ZABBIX` pelo endereço IP obtido pela VM `Zabbix-server`, o IP que você anotou.
+
+## Regra de redirecionamento
+
+```bash
+iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination IP-DO-ZABBIX:80
+```
+
+Exemplo:
+
+```bash
+iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination 10.0.137.174:80
+```
+
+## Regra de mascaramento
+
+```bash
+iptables -t nat -A POSTROUTING -j MASQUERADE
+```
+
+---
+
+# Acessando a interface Web
+
+Após configurar as regras NAT, a interface Web do Zabbix poderá ser acessada diretamente pelo navegador da máquina física utilizando:
+
+```text
+IP-DA-VM-PNETLAB:8080
+```
+
+Exemplo:
+
+```text
+http://10.0.75.x:8080
+```
