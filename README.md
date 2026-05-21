@@ -162,6 +162,4 @@ IP-DA-VM-PNETLAB:8080
 
 Exemplo:
 
-```text
-http://10.0.75.x:8080
-```
+![print-navegador](./screenshots/acessando-interface-zabbix.png)
