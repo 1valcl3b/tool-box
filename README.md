@@ -62,12 +62,9 @@ Após gerar novos endereços MAC para os dois adaptadores, clique em **OK**.
 
 Inicie a VM do PnetLab.
 
-Faça login utilizando as seguintes credenciais:
+Faça login utilizando o `Usuário:` root e `Senha:` pnet
 
-```text
-Usuário: root
-Senha: pnet
-```
+![passo6](./screenshots/acessando-pnet.png)
 
 Durante a inicialização, pressione `Enter` para confirmar as etapas de configuração padrão. Não é necessário alterar nenhuma opção.
 
@@ -82,7 +79,7 @@ Quando o sistema iniciar novamente, o PnetLab já poderá ser acessado:
 
 # Acessando a Interface Web
 
-![passo6](./screenshots/acessando-int-web-pnet.png)
+![passo7](./screenshots/acessando-int-web-pnet.png)
 
 Abra o navegador e acesse o endereço IP exibido pela VM.
 
@@ -90,9 +87,9 @@ Abra o navegador e acesse o endereço IP exibido pela VM.
 
 # Acessando os Cenários
 
-![passo7](./screenshots/acessando-lab.png)
+![passo8](./screenshots/acessando-lab.png)
 
-![passo8](./screenshots/dentro-lab.png)
+![passo9](./screenshots/dentro-lab.png)
 
 Dentro do PnetLab já existem dois cenários pré-configurados.
 
