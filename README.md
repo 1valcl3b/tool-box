@@ -70,10 +70,7 @@ Durante a inicialização, pressione `Enter` para confirmar as etapas de configu
 
 Após a confirmação das etapas, a VM será reiniciada automaticamente.
 
-Quando o sistema iniciar novamente, o PnetLab já poderá ser acessado:
-
-- Via SSH
-- Pelo navegador web
+Quando a VM iniciar novamente, o PnetLab já poderá ser acessado via SSH e pelo navegador web
 
 ---
 
@@ -81,7 +78,7 @@ Quando o sistema iniciar novamente, o PnetLab já poderá ser acessado:
 
 ![passo7](./screenshots/acessando-int-web-pnet.png)
 
-Abra o navegador e acesse o endereço IP exibido pela VM.
+Abra o navegador e acesse o endereço IP exibido pela VM (Endereço IP da VM do PnetLab, Ex: 10.0.75.x).
 
 ---
 
