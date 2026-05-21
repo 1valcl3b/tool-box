@@ -6,15 +6,7 @@ Faça o download da VM do PnetLab no link abaixo:
 
 [Baixar VM do PnetLab](https://drive.google.com/drive/folders/1h8y6L2dacmzpYOo9l2sSziUeawlDEpuZ?usp=sharing)
 
-Após concluir o download, extraia o arquivo `.zip` pelo terminal utilizando o comando `unzip`.
-
-> [!NOTE]
-> Adapte o caminho abaixo para o diretório onde o arquivo foi baixado.
-
-```bash
-cd Downloads
-unzip vm-pnet.zip
-```
+Após concluir o download, Siga os passos abaixo.
 
 ---
 
@@ -26,7 +18,10 @@ Abra o VirtualBox e clique em **Importar**.
 
 ![passo2](./screenshots/escolhendo-ovf.png)
 
-Selecione o arquivo `.ova` extraído anteriormente e clique em **Próximo**.
+Selecione o arquivo ` PNetLAB+Cenarios.ova`  e clique em **Próximo**.
+
+> [!NOTE]
+> Adapte o caminho abaixo para o diretório onde o arquivo foi baixado.
 
 ![passo3](./screenshots/importando-apliance.png)
 
